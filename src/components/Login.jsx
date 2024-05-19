@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import { useUserContext } from '../hooks/UserProvider'
 import logo from '../assets/logo.png'
 import Footer from './Footer'
+import Layout from './Layout'
 
 function Login() {
   const navigate = useNavigate()
@@ -57,7 +58,7 @@ function Login() {
   }
 
   return (
-    <div className='container'>
+    <div className='layout'>
       <main className='main'>
         <div className='login-card'>
           <div className='flex justify-center'>

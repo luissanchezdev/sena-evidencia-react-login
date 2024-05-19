@@ -18,7 +18,7 @@ function Header() {
       <div className="py-4 px-2 flex justify-between items-center text-white w-4/5">
         <a href="#">
           <h1>
-            <img src={logo} className="w-[250px]"></img>
+            <img src={logo} className="w-[192px]"></img>
           </h1>
         </a>
         <button className="py-1 px-5 bg-gray-500 text-white rounded-md hover:bg-red-500 text- transition-all duration-100 ease-linear" onClick={() => logout()}>Salir</button>

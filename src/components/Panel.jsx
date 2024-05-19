@@ -1,8 +1,7 @@
 import { useUserContext } from "../hooks/UserProvider"
 import { useNavigate } from "react-router-dom"
-
-import Header from "./ui/Header"
 import ProtectedRoute from "./ProtectedRoute"
+import Layout from "./Layout"
 
 function Panel() {
 
@@ -11,16 +10,15 @@ function Panel() {
   const userLogged = JSON.parse(localStorage.getItem('userLogged'))
   //console.log({ userLogged })
   return (
-    <>
+    <Layout>
       <ProtectedRoute isAllowed={userLogged} redirectTo={'/'}>
-        <div>
-          <Header />
-          <div className='flex justify-center items-center uppercase h-screen text-2xl bg-gray-100'>
-            <h2>Bienvenido {dataUser.username}</h2>
+        <div className="panel">
+          <div className='flex justify-center items-center flex-grow text-2xl'>
+            <h2 className="text-secondary">Bienvenido {dataUser.username}</h2>
           </div>
         </div>
       </ProtectedRoute>      
-    </>
+    </Layout>
   )
 }
 

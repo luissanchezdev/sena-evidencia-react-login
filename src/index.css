@@ -4,7 +4,7 @@
 
 
 .header {
-  @apply bg-thirty flex justify-center;
+  @apply bg-primary flex justify-center w-full;
 }
 
 .footer {
@@ -19,12 +19,12 @@
   @apply flex flex-col justify-center items-start my-2 w-full;
 }
 
-.container {
+.layout {
   @apply flex flex-col justify-center items-center min-h-screen bg-primary;
 }
 
 .main {
-  @apply flex flex-col justify-center items-center flex-grow w-full;
+  @apply flex flex-col justify-center items-center flex-grow  w-full;
 }
 
 .login-card {
@@ -53,4 +53,8 @@
 
 .notification-error {
   @apply flex flex-col justify-start items-center text-white text-sm bg-red-600 rounded-md p-2 w-full transition-all ease-out  duration-200;
+}
+
+.panel {
+  @apply bg-primary;
 }
