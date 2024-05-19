@@ -10,6 +10,6 @@ CREATE TABLE usuarios (
   password VARCHAR(50) NOT NULL
 );
 
-INSERT INTO usuarios('username', 'name', 'password') VALUES 
+INSERT INTO usuarios(username, name, password) VALUES 
   ('luissdev', 'Luis Sanchez', '1234'),
   ('anderson', 'Anderson Ramirez', '1234');
