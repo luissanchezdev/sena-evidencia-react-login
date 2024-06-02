@@ -1,5 +1,5 @@
 CREATE DATABASE login_react_spring;
-USE login_react;
+USE login_react_spring;
 
 DROP TABLE IF EXISTS usuarios;
 
